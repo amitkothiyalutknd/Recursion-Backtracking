@@ -7,7 +7,7 @@ public class xPowerofn {
         // int x = scn.nextInt();
         // System.out.print("Enter The Power Of Number: ");
         // int n = scn.nextInt();
-        int output = power(6, 2);
+        int output = power(2, 4);
         System.out.print("The Output Is: ");
         System.out.print(output);
     }
