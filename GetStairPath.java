@@ -20,21 +20,21 @@ public class GetStairPath {
             ArrayList<String> tempList = new ArrayList<>();
             return tempList;           
         }
-
+        
         ArrayList<String> pathOne = getStairPath(n - 1);
         ArrayList<String> pathTwo = getStairPath(n - 2); 
         ArrayList<String> pathThree = getStairPath(n - 3);
-        ArrayList<String> paths = new ArrayList<>();
+        ArrayList<String> allPath = new ArrayList<>();
 
         for(String path: pathOne) {
-            paths.add(1 + path);
+            allPath.add(1 + path);
         }
         for(String path: pathTwo) {
-            paths.add(2 + path);
+            allPath.add(2 + path);
         }
         for(String path: pathThree) {
-            paths.add(3 + path);
+            allPath.add(3 + path);
         }
-        return paths;
+        return allPath;
     }
 }
