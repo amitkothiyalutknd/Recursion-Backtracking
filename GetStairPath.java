@@ -22,7 +22,7 @@ public class GetStairPath {
         }
 
         ArrayList<String> pathOne = getStairPath(n - 1);
-        ArrayList<String> pathTwo = getStairPath(n - 2);
+        ArrayList<String> pathTwo = getStairPath(n - 2); 
         ArrayList<String> pathThree = getStairPath(n - 3);
         ArrayList<String> paths = new ArrayList<>();
 
